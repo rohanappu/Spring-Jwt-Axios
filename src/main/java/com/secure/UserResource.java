@@ -19,7 +19,7 @@ import com.secure.dao.AuthenticationResponse;
 import com.secure.repository.MyUserDetailsService;
 
 @RestController
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = "http://localhost:3000")
 public class UserResource {
 	@Autowired
 	AuthenticationManager authenticationManager;
@@ -57,6 +57,12 @@ public class UserResource {
 		return new ResponseEntity<>(data,HttpStatus.OK);
 		
 	}
+
+@GetMapping("/welcome")
+public ResponseEntity<String> Hello(){
+	return new ResponseEntity<String>("Welcome Nora" ,HttpStatus.OK);
+	
+}
 	
 	
 }
