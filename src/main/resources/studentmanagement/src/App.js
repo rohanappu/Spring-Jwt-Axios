@@ -10,7 +10,6 @@ import Error from './components/student/Error';
 function App() {
   return (
     <React.Fragment>
-   
     <Router>
     <Navbar/>
     

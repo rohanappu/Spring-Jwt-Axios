@@ -7,6 +7,7 @@ import Student from './student/Student';
 const Home =()=>{
     return(
         <section>
+          
           <Router>
             <Route path="/login" component={Login} />
             <Route path="/welcome" component={Welcome} />
