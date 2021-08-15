@@ -9,20 +9,21 @@ import Welcome from './components/Welcome';
 import Error from './components/student/Error';
 function App() {
   return (
-    <>
+    <React.Fragment>
    
     <Router>
     <Navbar/>
-      <>
+    
+   
       <Switch>
       <Route path="/login" exact component={Login} />
       <Route path="/welcome" exact component={Welcome} />
       <Route path="/student" exact component={Student} />
       <Route component={Error} />
       </Switch>
-      </>
+       
     </Router>
-</>
+    </React.Fragment>
   );
 }
 
